@@ -1,0 +1,16 @@
+{
+    "districts" : [
+        "ADILABAD", "HANUMAKONDA", "BHADRADRI KOTHAGUDEM", "HYDERABAD", "JAGTIAL", "JANGOAN", "WANAPARTHY", "JOGULAMBA GADWAL", 
+     	  "KAMAREDDY", "KARIMNAGAR", "KHAMMAM", "KOMARAM BHEEM ASIFABAD", "MAHABUBABAD", "MAHABUBNAGAR", "MANCHERIAL", "MEDAK", 
+   	  "MEDCHAL-MALKAJGIRI", "MULUG", "NAGARKURNOOL", "NALGONDA", "NARAYANPET", "NIRMAL", "NIZAMABAD", "PEDDAPALLI", "WARANGAL", 
+        "RANGAREDDY", "SANGAREDDY", "SIDDIPET", "SURYAPET", "VIKARABAD"
+    ],
+
+    "crops" : [
+        "Jowar", "Bajra", "Wheat"
+    ],
+
+    "soils" : [
+        "chalky", "clay", "loamy", "peaty", "sandy", "silty"
+    ]
+}

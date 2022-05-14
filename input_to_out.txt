@@ -1,0 +1,56 @@
+ X = ['Area', 'Temperature', 'Precipitaion', 'Humidity', 'Soil_type:_chalky',
+       'Soil_type:_clay', 'Soil_type:_loamy', 'Soil_type:_peaty',
+       'Soil_type:_sandy', 'Soil_type:_silt', 'Soil_type:_silty',
+       'District:_ADILABAD', 'District:_HANUMAKONDA', 'District:_BHADRADRI KOTHAGUDEM',
+       'District:_HYDERABAD', 'District:_JAGTIAL', 'District:_JANGOAN',
+       'District:_WANAPARTHY', 'District:_JOGULAMBA GADWAL', 'District:_KAMAREDDY',
+       'District:_KARIMNAGAR', 'District:_KHAMMAM', 'District:_KOMARAM BHEEM ASIFABAD',
+       'District:_MAHABUBABAD', 'District:_MAHABUBNAGAR', 'District:_MANCHERIAL',
+       'District:_MEDAK', 'District:_MEDCHAL-MALKAJGIRI', 'District:_MULUG',
+       'District:_NAGARKURNOOL', 'District:_NALGONDA', 'District:_NARAYANPET',
+       'District:_NIRMAL', 'District:_NIZAMABAD', 'District:_PEDDAPALLI',
+       'District:_WARANGAL', 'District:_RANGAREDDY', 'District:_SANGAREDDY',
+       'District:_SIDDIPET', 'District:_SURYAPET', 'District:_VIKARABAD',
+       'Crop:_Bajra', 'Crop:_Jowar', 'Crop:_Wheat', 'Season:_Kharif',
+       'Season:_Rabi', 'Season:_zaid']
+
+    index_dict = dict(zip(X,range(len(X))))
+
+    vect = {}
+    for key, val in index_dict.items():
+        vect[key] = 0
+    try:
+        vect[district] = 1
+    except Exception as e:
+        print("Exception occered for DISTRICT!", e)
+    try:
+        vect[Crop] = 1
+    except Exception as e:
+        print("Exception occered for CROP!")
+    try:
+        vect[soil_type] = 1
+    except Exception as e:
+        print("Exception occered for SOIL TYPE!")
+    try:
+        vect['Area'] = Area
+    except Exception as e:
+        print("Exception occered for AREA!", e)
+    try:
+        vect['Temperature'] = temp
+    except Exception as e:
+        print("Exception occered for TEMP!", e)
+    try:
+        vect['Precipitaion'] = preci
+    except Exception as e:
+        print("Exception occered for PRECI!", e)
+    try:
+        vect['Humidity'] = humi
+    except Exception as e:
+        print("Exception occered for HUMI!", e)
+
+    now = datetime.datetime.today()
+    season = "Season:_Kharif" if (now.month >= 7 and now.month <= 10) else "Season:_Rabi"
+    vect[season] = 1
+
+    # print(vect, len(vect))
+    df = pd.DataFrame.from_records(vect, index=[0])

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/23c9842fb0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+.bg-img {
+  background-image: url("https://agcensus.nic.in/images/slider-01.jpg");
+  min-height: 540px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+}
+.container {
+  position: fixed;
+  width: 100%;
+  /* <!--opacity:0.7;--> */
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+a:hover {
+  background-color: rgba(0,0,0,0.0);
+  text-color: black;
+}
+.span a:hover {
+background-color:rgba(0,0,0,0.0);
+}
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.leftalign{
+float:left;
+width:50%;
+background:rgba(30,144,255,0.4);
+padding:35px;
+margin-top:86px;
+border: 7px solid #ddd;
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.signupbtn button {
+  background-color: dodgerblue ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signupbtn button:hover {
+  opacity:1;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+  float: center;
+  width: auto;
+  position:relative;
+}
+
+/* Add padding to container elements */
+.container1 {
+  padding: 30px;
+  margin:70px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: rgba(30,144,255,0.4);
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+
+.vl {
+  border-left: 2px solid #696969;
+  height: 340px;
+  position: absolute;
+  left: 33%;
+  margin-left: -3px;
+  top: 22px;
+}
+.vl2 {
+  border-right: 2px solid #696969;
+  height: 340px;
+  position: absolute;
+  right: 33%;
+  margin-right: -3px;
+  top: 22px;
+}
+.contain{
+position:relative;
+background-color:rgba(0,0,0,0.7);
+width:100%;
+}
+.elements{
+float:left;
+width:33.333333333%;
+background-color:rgba(0,0,0,0.7);
+padding:30px;
+text-align:center;
+color:#ddd;
+}
+img.round {
+  border-radius: 50%;
+}
+.footer {
+   left: 0;
+   top:0px;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   background-color:rgba(0,0,0,0.7);
+   text-align: center;
+   padding:10px;
+}
+
+
+.fa {
+  bottom:420px;
+  padding: 8px;
+  font-size: 20px;
+  width:37px;
+  height:37px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  bottom:-1px;
+  position:relative;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  bottom:-1px;
+  position:relative;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  bottom:-1px;
+  position:relative;
+  color: white;
+}
+.fa-instagram {
+  color: white;
+   background: #d6249f;
+   bottom:-1px;
+   position:relative;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://media.istockphoto.com/vectors/nature-leaf-logo-designs-concept-vector-agriculture-logo-vector-id1269265521?k=20&m=1269265521&s=170667a&w=0&h=ZGTHvY9GipYbnCODEhi70IB_0cRsOtOKFVY6Pu-TBLA=" alt="Logo" style="width:40px;" class="rounded-pill">
+    </a>
+	<div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+    <li class="text-white" style="margin-top:6px;"> AgriCultureZone </li>
+        <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px;" class="a" href="file:///D:/EDT/edit%20website/farming.html">HOME</a>
+        </li>
+    <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px;" href="file:///D:/EDT/edit%20website/ftech.html">FARMING-TECHNIQUES</a>
+        </li>
+    <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px;" href="file:///D:/EDT/edit%20website/schemes.html">GOVERNMENT-SCHEMES</a>
+        </li>
+    <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px;" href="file:///D:/EDT/edit%20website/rates.html">RATES</a>
+        </li>
+    <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px;" href="file:///D:/EDT/edit%20website/alerts.html">ALERTS</a>
+        </li>
+    <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px;" href="http://localhost/index.php#part3">CROP YIELD PRIDICTION</a>
+        </li>
+    <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px;" href="file:///D:/EDT/edit%20website/about.html">ABOUT US</a>
+        </li>
+      </ul>
+	  </div>
+  </div>
+</nav>
+<p style="background-color:grey;padding:10px;color:white;margin-top:150px;font-size:20px;text-align:center;">Latest Minimum Support Price - Kharif and Rabi Crops (2021-22); 
+</p>
+  <table style="margin: 30px 110px 1em; padding: 3.625px 10.875px; border-spacing: 0px; font-size: 0.923077em;  border-collapse: collapse; border-bottom: 1px solid #ffffff; color: #565656; font-family: arial; height: 1154px;border:3px solid grey;">
+<tbody style="margin: 0px; padding: 0px;">
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 20px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 69px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><strong style="margin: 0px; padding: 0px;">Commodity</strong></p>
+</td>
+<td style="margin: 0px; padding: 20px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 69px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><strong style="margin: 0px; padding: 0px;">Variety</strong></p>
+</td>
+<td style="margin: 0px; padding: 20px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 69px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><strong style="margin: 0px; padding: 0px;">MSP for 2020-21 (Rs per quintal)</strong></p>
+</td>
+<td style="margin: 0px; padding: 20px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 69px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><strong style="margin: 0px; padding: 0px;">MSP for 2021-2022 (Rs per quintal)</strong></p>
+</td>
+<td style="margin: 0px; padding: 20px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 69px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><strong style="margin: 0px; padding: 0px;">Increase over previous year (Rs per quintal)</strong></p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 0px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; " colspan="5">
+<p style="margin: 0px; padding: 10px 8px 1em;"><strong style="margin: 0px; padding: 0px;">KHARIF CROPS</strong></p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Paddy</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Common</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">1868</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">1940</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">72</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Grade 'A'</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">1888</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">1960</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">72</p>
+</td>
+</tr>
+<tr  style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Jowar</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Hybrid</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">2620</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">2738</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><span style="margin: 0px; padding: 0px;">118</span></p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Maldandi</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">2640</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">2758</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">118</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Bajra</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><span style="margin: 0px; padding: 0px;">2150</span></p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">2250</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">100</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Maize</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">1850</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">1870</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">20</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Ragi</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">3295</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">3377</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">82</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Arhar (Tur)</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">6000</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">6300</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">300</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Moong</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">7196</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">7275</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><span style="margin: 0px; padding: 0px;">79</span></p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Urad</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">6000</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">6300</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center"><span style="margin: 0px; padding: 0px;">300<br style="margin: 0px; padding: 0px;" /></span></p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Cotton</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Med Staple*</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">5515</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px;  text-align: center;">5726</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">211</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Long Staple*</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5825</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">6025</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">200</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Groundnut in shell</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5275</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">5550</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">275</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Sunflower seed</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 3.60938px;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">5885</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">6015</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">130</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Soyabeen</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">Yellow</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">3880</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">3950</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; "><span style="margin: 0px; padding: 0px;">70</span></td>
+</tr>
+<tr  style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Sesamum</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">-</p>
+</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">6855</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">7307</td>
+<td style="margin: 0px; padding: 10px 5px 1em; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">452</td>
+</tr>
+
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; " colspan="5">
+<p style="margin: 0px; padding: 10px 8px 1em;"><strong style="margin: 0px; padding: 0px;">RABI CROPS (Rabi Marketing Season (RMS) 2022-23)</strong></p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Wheat</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">1975</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">2015</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">40</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Barley</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">1600</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">1635</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">35</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Gram</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5100</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5230</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">130</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Masur (Lentil)</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5100</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5500</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">400</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Rapeseed &amp; Mustard</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">4650</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">5050</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; text-align: center; height: 31px; ">400</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Safflower</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5237</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">5441</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; text-align: center; height: 31px; ">114</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Toria</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">4650</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">5050</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">400</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; " colspan="5">
+<p style="margin: 0px; padding: 10px 8px 1em;"><strong style="margin: 0px; padding: 0px;">OTHER CROPS</strong></p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Copra (2021 crop season)</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Milling</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;9960</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">10335</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">375</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Ball</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">&nbsp;10300</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">10600</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">300</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">De-husked coconut</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">2571</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">2700</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">129</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px; background: #eeeeee;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Raw Jute (for 2021-22 season)</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">4225</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">4500</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #e6e7e8; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">275</p>
+</td>
+</tr>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">Sugarcane $ (for the sugar season 2021-22)</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;">&nbsp;</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">&nbsp;</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">290</p>
+</td>
+<td style="margin: 0px; padding: 3.60938px; border: 1px solid #ffffff; vertical-align: top; background: #fafafa; height: 31px; ">
+<p style="margin: 0px; padding: 10px 5px 1em;" align="center">-</p>
+</td>
+</tr>
+</tbody>
+</table>
+ <div class="footer">
+
+ <b style="text-align:center;margin-right:1%;padding:10px;">Copyright <i class="far fa-copyright"></i>2021- AgriCultureZone. All Rights Reserved<span style="color:rgba(0,0,0,0.0);"></span></b>
+ <span style="bottom:6px;color:#87CEEB;">follow us -</span>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-linkedin"></a>
+
+</div>
+</body>
+</html>
