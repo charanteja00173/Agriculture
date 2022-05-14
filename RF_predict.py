@@ -10,7 +10,7 @@ import sklearn
 from sklearn.ensemble import RandomForestRegressor
 
 import numpy as np
-dataset = pd.read_csv(r'C:\xampp\htdocs\mp.csv')
+dataset = pd.read_csv(r'mp.csv')
 X = dataset.iloc[:, 3:].values
 y = dataset.iloc[:, 2].values
 from sklearn.ensemble import RandomForestRegressor
